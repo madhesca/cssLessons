@@ -1,13 +1,11 @@
 import React from "react";
 import "./App.css";
-import NavButtons from "./components/NavButtons/NavButtons";
-import Forms from "./components/Forms/Forms";
+import MobileFirst1 from "./components/MobileFirst1/MobileFirst1";
 
 function App() {
   return (
     <div>
-      <NavButtons />
-      <Forms />
+      <MobileFirst1 />
     </div>
   );
 }
