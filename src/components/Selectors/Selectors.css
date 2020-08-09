@@ -1,0 +1,76 @@
+.left,
+.center,
+.right {
+  border: 2px solid red;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #ccc;
+}
+
+/*adjacent selector*/
+h1 + p {
+  color: red;
+}
+
+/* all siblings*/
+h1 ~ p {
+  background-color: forestgreen;
+}
+
+/*attribute selectors*/
+p[lang] {
+  color: red;
+}
+
+p[lang="en-us"] {
+  font-weight: bold;
+}
+
+p[lang^="fr"] {
+  background-color: gold;
+}
+
+p[lang$="o"] {
+  border: 1px solid blue;
+}
+
+/**nth child*/
+
+.child p:nth-child(odd) {
+  background-color: skyblue;
+}
+
+.child p:nth-child(even) {
+  background-color: slateblue;
+}
+
+.child p:nth-child(5) {
+  font-size: large;
+}
+
+.child p:nth-child(2n + 3) {
+  font-size: large;
+  font-weight: bold;
+  color: red;
+}
+
+/*not selector*/
+
+p {
+  font-weight: 900;
+}
+
+:not(p) {
+  background-color: seagreen;
+}
+
+/*::first-letter and first line*/
+
+h4::first-letter {
+  color: red;
+}
+
+h4::first-line {
+  background-color: yellow;
+}
